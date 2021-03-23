@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b86e853a98ada4f4bb720da6d05793a8, type: 3}
+  m_Name: Hello
+  m_EditorClassIdentifier: 
+  lines:
+  - speaker: {fileID: 11400000, guid: a1f7d667f3fb17640bf8c56260cefab6, type: 2}
+    dialogue: Hi Ryan. Yeet.
+    actions:
+    - action: 1
+      label: Ryan
+      nextLine: 1
+      isBranch: 1
+    - action: 1
+      label: Claire
+      nextLine: 2
+      isBranch: 1
+  - speaker: {fileID: 11400000, guid: 690af271e695e144aa2bf6714a10a6e5, type: 2}
+    dialogue: What?
+    actions:
+    - action: 0
+      label: 
+      nextLine: 2
+      isBranch: 0
+  - speaker: {fileID: 11400000, guid: b4bc61b262432c341a133e4f7f9598e3, type: 2}
+    dialogue: Oh shit!
+    actions:
+    - action: 2
+      label: 
+      nextLine: 0
+      isBranch: 0
