@@ -2,12 +2,10 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 namespace Wakaba.Mobile
 {
-    public enum JoystickAxis
-    {
-        None,
-        Horizontal,
-        Vertical
-    }
+    /// <summary></summary>
+    public enum JoystickAxis { None, Horizontal, Vertical };
+    
+    /// <summary></summary>
     public class JoystickInput : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerDownHandler, IPointerUpHandler
     {
         /// <summary>The input axis value that the joystick represents. Both the direction and amount on each axis.</summary>

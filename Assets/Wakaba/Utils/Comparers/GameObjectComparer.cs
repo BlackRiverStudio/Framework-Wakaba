@@ -4,12 +4,8 @@ namespace Wakaba.Utils.Comparers
 {
     public class GameObjectComparer : IComparer<GameObject>
     {
-        GameObject gameObject;
-        public GameObjectComparer(string name)
-        {
-            gameObject = new GameObject();
-            gameObject.name = name;
-        }
+        readonly GameObject gameObject;
+        public GameObjectComparer(string _name) => gameObject = new GameObject { name = _name };
 
         public int Compare(GameObject _x, GameObject _y)
         {

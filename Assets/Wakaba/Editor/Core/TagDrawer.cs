@@ -3,6 +3,7 @@ using UnityEngine;
 namespace Wakaba
 {
     [CustomPropertyDrawer(typeof(TagAttribute))] // Tells Unity what to apply this drawer to.
+    /// <summary>Inherits from PropertyDrawer, allows for tags to be easily referenced in the Editor.</summary>
     public class TagDrawer : PropertyDrawer
     {
         /// <summary>The function that renders the property into the inspector.</summary>

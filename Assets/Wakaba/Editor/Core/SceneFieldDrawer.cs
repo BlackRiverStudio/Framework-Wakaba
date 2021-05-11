@@ -3,9 +3,8 @@ using UnityEngine;
 namespace Wakaba
 {
     [CustomPropertyDrawer(typeof(SceneFieldAttribute))] // Tells Unity what to apply this drawer to.
-
-
-                                               public class SceneFieldDrawer : PropertyDrawer
+    /// <summary>Inherits from PropertyDrawer, allows for scenes to be easily referenced in the Editor.</summary>
+    public class SceneFieldDrawer : PropertyDrawer
     {       
         /// <summary>The function that renders the property into the inspector.</summary>
         public override void OnGUI(Rect _position, SerializedProperty _property, GUIContent _label)
